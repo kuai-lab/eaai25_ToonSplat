@@ -1,1 +1,0 @@
-# eaai25_ToonSplat
