@@ -6,7 +6,7 @@
 <img src="./assets/ToonSplat" width="128" height="128">
 </p> -->
 
-![teaser](./assets/ToonSplat.jpg)
+![teaser](./assets/ToonSplat.png)
 
 Abstract: The growth of the augmented reality industry has increased demand for three-dimensional (3D) cartoon avatars, requiring expertise from computer graphics designers. Recent 3D Gaussian splatting methods have successfully reconstructed 3D avatars from videos, establishing them as a promising solution for this task. However, these methods primarily focus on real-world videos, limiting their effectiveness in the cartoon domain. In this paper, we present an artificial intelligence (AI)-based method for 3D avatar reconstruction from animated cartoon videos, addressing the physically unrealistic and unstructured geometries of cartoons, as well as the varying texture styles across frames. Our surface fitting module models the unstructured geometry of cartoon characters by integrating the surfaces observed from multiple views into a 3D avatar. We design a style normalizer that adjusts color distributions to reduce texture color inconsistencies in each frame of animated cartoons. Additionally, to better capture the simplified color distributions of cartoons, we design a frequency transform loss that focuses on low-frequency components. Our method significantly outperforms state-of-the-art methods, achieving approximately a 25\% improvement in Learned Perceptual Image Patch Similarity (LPIPS) with a score of 0.052 over baselines across the Cartoon Neuman and ToonVid datasets, which comprise 10 videos with diverse styles and poses. Consequently, this paper presents a promising solution to meet the growing demand for high-quality 3D cartoon avatar modeling.
 
@@ -75,7 +75,7 @@ PROJECT_ROOT/data/CartoonNeuman
 
 ### Data Preprocess
 
-To obtain the template body model, we follow the approach of [ScoreHMR](https://github.com/statho/ScoreHMR), and to obtain the GT surface normal, we follow the approach of [ECON](ECON: Explicit Clothed Humans Optimized via Normal Integration).  
+To obtain the template body model, we follow the approach of [ScoreHMR](https://github.com/statho/ScoreHMR), and to obtain the GT surface normal, we follow the approach of [ECON](https://github.com/YuliangXiu/ECON).  
 
 We provide a cartoon-specific character segmentation module to obtain pixel-wise segmentation masks for each video frame. 
 To execute, run: 
@@ -108,5 +108,6 @@ Our code is based on several interesting and helpful projects:
 - Text2Seg: <https://github.com/Douglas2Code/Text2Seg>
 - Detectron2: <https://github.com/facebookresearch/detectron2>
 - GART: <https://github.com/JiahuiLei/GART>
+
 
 
